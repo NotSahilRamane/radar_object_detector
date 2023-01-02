@@ -1,0 +1,5 @@
+<launch>
+    <node name="radar_object_detector" pkg="radar_object_detector" type="main.py" output="screen">
+        <rosparam command="load" file="$(find radar_object_detector)/config/object_detector.yaml" /> <!--Load parameters from config files-->
+    </node>
+</launch>
